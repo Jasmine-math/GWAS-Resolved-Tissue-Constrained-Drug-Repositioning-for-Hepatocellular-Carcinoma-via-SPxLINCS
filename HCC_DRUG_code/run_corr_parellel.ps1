@@ -1,0 +1,22 @@
+conda run -n lincs python -u "C:\Users\ajifang\Desktop\corr_parellel.py" `
+  --sp_dir "C:\Users\ajifang\Desktop\Drug corr path\S-PrediXcan z-score" `
+  --gwas_id "ebi-a-GCST90018803_hg38" `
+  --sig_info_qc "C:\Users\ajifang\Desktop\Drug corr path\lincs_filtered_trtcp_strict\sig_info_trt_cp_strict.csv" `
+  --cid_list "C:\Users\ajifang\Desktop\Drug corr path\lincs_filtered_trtcp_strict\selected_sig_ids_trt_cp_strict.txt" `
+  --gctx "C:\Users\ajifang\Desktop\Drug corr path\GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx" `
+  --gene_info "C:\Users\ajifang\Desktop\Drug corr path\GSE92742_Broad_LINCS_gene_info.txt" `
+  --gene_info_landmark "C:\Users\ajifang\Desktop\Drug corr path\gene_info_intersection_11358.txt" `
+  --use_landmark_only 1 `
+  --out_root "C:\Users\ajifang\Desktop\Drug corr path\SPxLINCS_results_strict7169" `
+  --batch_size 1000 `
+  --workers 16 `
+  --window_size 200 `
+  --k_full 50,100,250,500 `
+  --nperm_liver 200 `
+  --nperm_key_mid 200 `
+  --k_fast 50,100 `
+  --nperm_fast 200 `
+  --top_n 15 `
+  --q_threshold 0.05 `
+  --force_full 0 `
+  --top_pct 1.0
